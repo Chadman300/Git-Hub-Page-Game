@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullet Hell - Top Down Shooter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+        }
+        
+        #gameContainer {
+            position: relative;
+            background: #111;
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+        }
+        
+        canvas {
+            display: block;
+            background: #0a0a0a;
+        }
+        
+        #gameInfo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #0ff;
+            font-size: 18px;
+            text-shadow: 0 0 10px #0ff;
+            pointer-events: none;
+        }
+        
+        #gameOver {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #f00;
+            font-size: 48px;
+            text-shadow: 0 0 20px #f00;
+            display: none;
+            pointer-events: none;
+        }
+        
+        #gameOver.show {
+            display: block;
+        }
+        
+        #gameOver p {
+            font-size: 24px;
+            color: #0ff;
+            margin-top: 20px;
+        }
+        
+        #instructions {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #0ff;
+            font-size: 14px;
+            text-shadow: 0 0 5px #0ff;
+            text-align: center;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="gameInfo">
+            <div>Score: <span id="score">0</span></div>
+            <div>Health: <span id="health">100</span></div>
+            <div>Wave: <span id="wave">1</span></div>
+        </div>
+        <div id="gameOver">
+            GAME OVER
+            <p>Press SPACE to Restart</p>
+        </div>
+        <div id="instructions">
+            WASD or Arrow Keys to Move | SPACE to Shoot | Avoid Enemy Bullets!
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
