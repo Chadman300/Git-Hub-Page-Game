@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Register externalfile:// protocol handler
+; NOTE: You need to edit this file to use the correct paths for your system
+; Replace "C:\\path\\to\\node.exe" with your actual Node.js installation path
+; Replace "C:\\path\\to\\launcher.js" with the actual path to launcher.js
+
+[HKEY_CLASSES_ROOT\externalfile]
+@="URL:External File Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\externalfile\shell]
+
+[HKEY_CLASSES_ROOT\externalfile\shell\open]
+
+[HKEY_CLASSES_ROOT\externalfile\shell\open\command]
+@="\"C:\\Program Files\\nodejs\\node.exe\" \"C:\\path\\to\\Git-Hub-Page-Game\\launcher.js\" \"%1\""

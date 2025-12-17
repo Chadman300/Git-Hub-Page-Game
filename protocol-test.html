@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External File Protocol Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, #00ffff 0%, #0080ff 100%);
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 255, 255, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 255, 255, 0.6);
+        }
+        
+        .btn:active {
+            transform: translateY(-1px);
+        }
+        
+        .info {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #aaa;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+        }
+        
+        code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Protocol Test Page</h1>
+        <p>
+            This page demonstrates the custom <code>externalfile://</code> protocol handler.
+            Click the button below to launch the game using the custom protocol.
+        </p>
+        
+        <a href="externalfile:///game" class="btn">🚀 Launch Game</a>
+        
+        <div class="info">
+            <p>
+                <strong>Note:</strong> Make sure you've registered the protocol handler first!<br>
+                See <strong>LAUNCHER-SETUP.md</strong> for instructions.
+            </p>
+            <p style="margin-top: 10px;">
+                If the protocol is registered correctly, clicking the button will open the game in your default browser.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Generated protocol registration files (created by register-protocol.js)
+*-generated.reg
+*-generated.desktop
+
+# Node modules (if ever added)
+node_modules/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

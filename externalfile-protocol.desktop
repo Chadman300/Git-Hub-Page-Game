@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=External File Protocol Handler
+Comment=Handle externalfile:// protocol URLs
+Exec=/usr/bin/node /path/to/Git-Hub-Page-Game/launcher.js %u
+Terminal=false
+MimeType=x-scheme-handler/externalfile;
+NoDisplay=true
+Categories=Network;
+Icon=applications-internet
