@@ -1,0 +1,12 @@
+{
+  "name": "git-hub-page-game",
+  "version": "1.0.0",
+  "description": "A bullet hell top-down shooter game that can be launched via custom protocol",
+  "main": "launcher.js",
+  "scripts": {
+    "register": "node register-protocol.js"
+  },
+  "keywords": ["game", "bullet-hell", "protocol-handler"],
+  "author": "",
+  "license": "MIT"
+}
