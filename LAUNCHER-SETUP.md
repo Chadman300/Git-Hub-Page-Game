@@ -192,7 +192,13 @@ After installation, test the protocol to make sure it works:
 
 ### Method 2: HTML Test File
 
-Create a test HTML file with this content:
+Use the included `protocol-test.html` file:
+
+1. Open `protocol-test.html` in your web browser
+2. Click the "Launch Game" button
+3. The game should open in a new browser window/tab
+
+Or create your own test HTML file with this content:
 
 ```html
 <!DOCTYPE html>
